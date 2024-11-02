@@ -1,4 +1,5 @@
 # https://hub.docker.com/r/linuxserver/code-server
+# VSCode 이미지를 기반으로 시작
 FROM linuxserver/code-server:4.93.1
 
 # ENV for Code-server (VSCode)

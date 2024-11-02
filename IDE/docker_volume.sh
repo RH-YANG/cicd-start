@@ -1,14 +1,17 @@
-# 볼륨 새성 (volume name : cloud-cicd-src)
-docker volume create  \
---opt device="/Users/dangtongbyun/Library/CloudStorage/GoogleDrive-dbyun@redhat.com/내 드라이브/05.Lecture/cicd/cloud-cicd/src" \
+# 볼륨 생성 (volume name : cloud-cicd-src)
+# 컨테이너 생성시 사용할 마운트를 미리 추가해놓는다(별칭으로 사용)
+# 해당 명령어를 하나씩 실행한다.
+
+docker volume create \
+--opt device="D:/cicd/cicd-start/IDE/src" \
 --opt o=bind --opt type=none cloud-cicd-src
 
 docker volume create  \
---opt device="/Users/dangtongbyun/Library/CloudStorage/GoogleDrive-dbyun@redhat.com/내 드라이브/05.Lecture/cicd/cloud-cicd/vscode" \
+--opt device="D:/cicd/cicd-start/IDE/vscode" \
 --opt o=bind --opt type=none vscode
 
 docker volume create  \
---opt device="/Users/dangtongbyun/Library/CloudStorage/GoogleDrive-dbyun@redhat.com/내 드라이브/05.Lecture/cicd/cloud-cicd/jenkins" \
+--opt device="D:/cicd/cicd-start/IDE/jenkins" \
 --opt o=bind --opt type=none jenkins-home
 
 # 볼륨 생성 확인

@@ -15,7 +15,7 @@ services:
       - JAVA_OPTS=-Djenkins.install.runSetupWizard=false  # 초기 설정 마법사 비활성화 옵션
     
   server:
-    image: dangtong76/cloud-cicd # 내가 도커허브에 올린 이름으로 지정함. 이름 규칙은 /앞에는 내 계정 뒤는 내가 지은 이름
+    image: rrhh1122/cloud-cicd # 내가 도커허브에 올린 이름으로 지정함. 이름 규칙은 /앞에는 내 계정 뒤는 내가 지은 이름
     container_name: "ide"
     networks:
       - kind_network

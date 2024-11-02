@@ -1,0 +1,8 @@
+# 보안관련
+password.txt
+.env
+
+# 도커 마운트 된 폴더
+jenkins
+src
+vscode

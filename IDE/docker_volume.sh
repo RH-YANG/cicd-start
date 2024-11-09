@@ -3,7 +3,7 @@
 # 해당 명령어를 하나씩 실행한다.
 
 docker volume create \
---opt device="D:/cicd/cicd-start/IDE/src" \
+--opt device="D:/cicd/cicd-start/IDE" \
 --opt o=bind --opt type=none cloud-cicd-src
 
 docker volume create  \
